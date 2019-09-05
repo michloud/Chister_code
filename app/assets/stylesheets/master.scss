@@ -45,3 +45,20 @@ body {
   margin-top: 1px;
 
  }
+
+ .pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #133498;
+  color: #133498;
+}
+
+
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+
+
