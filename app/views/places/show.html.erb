@@ -63,7 +63,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Submit Comment", class: 'btn btn-primary' %>
+          <%= f.submit "Submit", class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>
@@ -106,9 +106,7 @@
 
 <% @place.photos.each do |photo| %>
   <div>
-    <blockquote>
-      <b><%= photo.caption %></b> 
-    </blockquote>
+    <b><%= photo.caption %></b> 
   </div>
 <% end %>
 
