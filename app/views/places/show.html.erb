@@ -97,16 +97,21 @@
 </div>
 
 
-<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+<%= simple_form_for @photo, url:place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
+  <%= f.input :picture %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+ 
+ 
 <% end %>
 
 <h1>Photos</h1>
 
 <% @place.photos.each do |photo| %>
   <div>
-    <b><%= photo.caption %></b> 
+      <b><%= photo.caption %></b>
+       <%= image_tag photo.picture.to_s,  class: 'img-fluid' %>
+    
   </div>
 <% end %>
 
