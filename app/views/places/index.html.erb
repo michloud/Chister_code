@@ -21,8 +21,16 @@
     </div>
   <% end %>
   </div>
-<% end %>
+
+
+  <% if place.photos.present? %>
+    <div class=" index-box col-4 offset-1">
+      <%= image_tag place.photos.last.picture.to_s,  class: 'img-fluid' %>
+      <b><%= place.photos.last.caption %></b>
+    </div>
+  <% end %>
   
   <div class="pagination col-10 offset-1">
     <%= will_paginate @places %>
   </div>
+<% end %>
