@@ -7,7 +7,7 @@
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
+  background: #F5F8F8;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
@@ -30,11 +30,12 @@ body {
 .navbar {
   background: image_url('cartographer.png');
   box-shadow: 3px 3px 3px grey;
+
 }
 
 .navbar-inverse .navbar-brand {
-  color: #2C92A8;
-  font-family: 'rubikregular', sans-serif;
+  color: #E9EFF5;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-size: 26px;
   
 
@@ -127,6 +128,27 @@ blockquote p {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+
+}
+
+.carousel-caption {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 
