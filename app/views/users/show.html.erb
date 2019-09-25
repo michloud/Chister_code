@@ -18,7 +18,9 @@
 <br /><br />
 
 <h2 class="text-center">My Comments</h2>
-<br /><br />
+
+<br />
+
 <div class="row">
   <% @user.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
@@ -50,16 +52,16 @@
     <% end %>
 
 
-  <% if place.comments.present? %>
-    <div class="col-12">
-      <blockquote>
-        <% if place.comments.last.humanized_rating.present? %>
-          <b><%= place.comments.last.humanized_rating %></b> -
-        <% end %>
-        <%= place.comments.last.message %>
-        <small><%= place.comments.last.user.email %></small>
-      </blockquote>
-    </div>
-  <% end %>
+    <% if place.comments.present? %>
+      <div class="col-12">
+        <blockquote>
+          <% if place.comments.last.humanized_rating.present? %>
+            <b><%= place.comments.last.humanized_rating %></b> -
+          <% end %>
+          <%= place.comments.last.message %>
+          <small><%= place.comments.last.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
   </div>
 <% end %>
