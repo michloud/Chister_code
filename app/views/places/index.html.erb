@@ -59,7 +59,7 @@
 
 
   <% if place.photos.present? %>
-    <div class=" index-box col-4 offset-1">
+    <div class="col-4 offset-1">
       <%= image_tag place.photos.last.picture.to_s,  class: 'img-fluid1' %>
       <figcaption><%= place.photos.last.caption %></figcaption>
     </div>
